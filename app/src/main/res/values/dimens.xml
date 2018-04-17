@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--activity_main-->
+    <dimen name="gap_top">10dp</dimen>
+
+
+</resources>

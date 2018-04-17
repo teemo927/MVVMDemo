@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MVVPDemo</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="submit">提交</string>
+</resources>

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
+        <import type="com.ciyun.mvvmdemo.MainViewModel"/>
         <variable
             name="viewModel"
             type="com.ciyun.mvvmdemo.MainViewModel" />
@@ -52,6 +53,7 @@
             android:textSize="@dimen/login_name" />
 
         <EditText
+            android:bufferType="editable"
             android:id="@+id/et_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

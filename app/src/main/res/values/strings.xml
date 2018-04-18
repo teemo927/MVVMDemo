@@ -10,4 +10,5 @@
     <string name="logining">登录中...账号:%s , 密码:%s</string>
     <string name="sure">确定</string>
     <string name="not_phone_num">请输入正确的电话号码</string>
+    <string name="title_activity_second_same">SecondSameActivity</string>
 </resources>

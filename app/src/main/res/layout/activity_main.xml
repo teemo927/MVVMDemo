@@ -15,36 +15,41 @@
         android:gravity="center"
         tools:context="com.ciyun.mvvmdemo.MainActivity">
 
+        <View
+            android:id="@+id/view"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorPrimaryDark"
+            app:onTouchCommand="@{viewModel.onTouchCommond}" />
+
         <ImageView
             android:id="@+id/iv_icon"
             android:layout_width="200dp"
             android:layout_height="200dp"
+            android:layout_below="@id/view"
             android:layout_centerHorizontal="true"
-            android:scaleType="fitXY"
+            android:scaleType="centerCrop"
+            app:clickCommand="@{viewModel.onImgClickCommand}"
             app:placeholderImageRes="@drawable/blood_on"
             app:uri="@{viewModel.url}" />
-
-        <TextView
-            android:id="@+id/iv_msg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/iv_icon"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="@dimen/gap_top"
-            android:text="@{viewModel.msg}" />
 
         <EditText
             android:id="@+id/et_user_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/iv_msg"
+            android:layout_below="@id/iv_icon"
             android:layout_centerHorizontal="true"
             android:layout_marginLeft="50dp"
             android:layout_marginRight="50dp"
             android:layout_marginTop="@dimen/gap_top"
-            android:text="@{viewModel.userName}"
-            app:afterTextChangedCommand="@{viewModel.afterUserNameTextChangedCommand}"
-            android:gravity="start" />
+            android:gravity="start"
+            android:hint="@string/input_phone_num"
+            android:inputType="number"
+            android:text="@={viewModel.userName}"
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/textHindColor"
+            android:textSize="@dimen/login_name" />
 
         <EditText
             android:id="@+id/et_password"
@@ -55,8 +60,14 @@
             android:layout_marginLeft="50dp"
             android:layout_marginRight="50dp"
             android:layout_marginTop="@dimen/gap_top"
+            android:gravity="start"
+            android:hint="@string/input_password"
+            android:inputType="textPassword"
             android:text="@={viewModel.password}"
-            android:gravity="start" />
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/textHindColor"
+            android:textSize="@dimen/login_name"
+            app:requestFocus="true" />
 
         <Button
             android:id="@+id/btn_submit"
@@ -66,8 +77,10 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="@dimen/gap_top"
             android:gravity="center"
-            app:clickCommand="@{viewModel.onClickCommand}"
-            android:text="@string/submit" />
+            android:text="@string/submit"
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/textHindColor"
+            app:clickCommand="@{viewModel.onClickCommand}" />
 
     </RelativeLayout>
 </layout>

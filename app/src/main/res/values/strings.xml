@@ -1,5 +1,13 @@
 <resources>
     <string name="app_name">MVVPDemo</string>
-    <string name="title_activity_base">BaseActivity</string>
+
+    <!--模拟登录-->
+    <string name="input_phone_num">请输入您的手机号</string>
+    <string name="input_password">请输入您的密码</string>
     <string name="submit">提交</string>
+    <string name="empty_name_and_password">账号和密码不能为空</string>
+    <string name="error_name_and_password">账号或密码不能错误，请重新输入</string>
+    <string name="logining">登录中...账号:%s , 密码:%s</string>
+    <string name="sure">确定</string>
+    <string name="not_phone_num">请输入正确的电话号码</string>
 </resources>

@@ -6,7 +6,6 @@ package com.ciyun.mvvmdemo.model;
  */
 
 public class MainBean {
-    String msg;
     String url;
     String userName;
     String password;
@@ -14,19 +13,10 @@ public class MainBean {
     public MainBean() {
     }
 
-    public MainBean(String msg, String url, String userName, String password) {
-        this.msg = msg;
+    public MainBean(String url, String userName, String password) {
         this.url = url;
         this.userName = userName;
         this.password = password;
-    }
-
-    public String getMsg() {
-        return msg;
-    }
-
-    public void setMsg(String msg) {
-        this.msg = msg;
     }
 
     public String getUrl() {

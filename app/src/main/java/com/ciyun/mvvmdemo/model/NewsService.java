@@ -1,14 +1,15 @@
-package com.ciyun.mvvmdemo.api;
+package com.ciyun.mvvmdemo.model;
 
 import java.io.Serializable;
 import java.util.List;
 
+import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Path;
 
 public interface NewsService {
     @GET("/api/4/news/before/{date}")
-    News getNewsList(@Path("date") String date);
+    public Call<News> getNewsList();
 
     class News {
 
@@ -127,8 +128,27 @@ public interface NewsService {
             public StoriesBean(ExtraField extraField) {
                 this.extraField = extraField;
             }
+
+            @Override
+            public String toString() {
+                return "StoriesBean{" +
+                        "extraField=" + extraField +
+                        ", title='" + title + '\'' +
+                        ", ga_prefix='" + ga_prefix + '\'' +
+                        ", multipic=" + multipic +
+                        ", type=" + type +
+                        ", id=" + id +
+                        ", images=" + images +
+                        '}';
+            }
         }
 
-
+        @Override
+        public String toString() {
+            return "News{" +
+                    "date='" + date + '\'' +
+                    ", stories=" + stories +
+                    '}';
+        }
     }
 }

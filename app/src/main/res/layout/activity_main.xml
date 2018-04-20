@@ -4,17 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-        <import type="com.ciyun.mvvmdemo.MainViewModel"/>
+        <import type="com.ciyun.mvvmdemo.viewModel.MainViewModel"/>
         <variable
             name="viewModel"
-            type="com.ciyun.mvvmdemo.MainViewModel" />
+            type="com.ciyun.mvvmdemo.viewModel.MainViewModel" />
     </data>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        tools:context="com.ciyun.mvvmdemo.MainActivity">
+        tools:context="com.ciyun.mvvmdemo.ui.MainActivity">
 
         <View
             android:id="@+id/view"

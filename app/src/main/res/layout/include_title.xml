@@ -4,7 +4,7 @@
     <data>
         <variable
             name="viewModel"
-            type="com.ciyun.mvvmdemo.CommonTitleViewModel" />
+            type="com.ciyun.mvvmdemo.viewModel.CommonTitleViewModel" />
     </data>
 
     <RelativeLayout

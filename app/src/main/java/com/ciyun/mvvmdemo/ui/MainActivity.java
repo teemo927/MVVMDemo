@@ -1,10 +1,12 @@
-package com.ciyun.mvvmdemo;
+package com.ciyun.mvvmdemo.ui;
 
 import android.app.Activity;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 
+import com.ciyun.mvvmdemo.R;
 import com.ciyun.mvvmdemo.databinding.ActivityMainBinding;
+import com.ciyun.mvvmdemo.viewModel.MainViewModel;
 import com.facebook.drawee.backends.pipeline.Fresco;
 
 public class MainActivity extends Activity {

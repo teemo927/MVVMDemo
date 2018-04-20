@@ -1,4 +1,4 @@
-package com.ciyun.mvvmdemo;
+package com.ciyun.mvvmdemo.viewModel;
 
 import android.util.Log;
 
